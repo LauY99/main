@@ -76,7 +76,9 @@ Set and show an image for a person in the addressbook. Uses the index of a perso
 e.g. `image 1 /home/user/someexample.jpg`
 
 === Expiry Date: `expire`
-Set the expiry date of a person. The entry will be automatically removed from addressbook once it expires. Coming v1.5
+Set the expiry date of a person.
+The entry will be automatically removed from addressbook once it expires. Coming v1.5
+e.g. `expire 1 d/2011-10-10`
 
 === Exporting Database
 Export a working version of the database and the images associated to it to a directory specified.
