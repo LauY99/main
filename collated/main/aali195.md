@@ -1,4 +1,5 @@
 # aali195
+
 ###### \java\seedu\address\commons\exceptions\ImageException.java
 ``` java
 /**
@@ -15,6 +16,7 @@ public class ImageException extends IllegalValueException {
     }
 }
 ```
+
 ###### \java\seedu\address\commons\util\CompressUtil.java
 ``` java
 /**
@@ -221,6 +223,7 @@ public class ExportCommand extends Command {
     }
 }
 ```
+
 ###### \java\seedu\address\logic\commands\ImageCommand.java
 ``` java
     public static final String COMMAND_WORD = "image";
@@ -280,7 +283,6 @@ public class ExportCommand extends Command {
         if (other == this) {
             return true;
         }
-
         // instanceof handles nulls
         if (!(other instanceof ImageCommand)) {
             return false;
@@ -292,7 +294,7 @@ public class ExportCommand extends Command {
                 && image.equals(e.image);
     }
 ```
-###### \java\seedu\address\logic\parser\ExportCommandParser.java
+###### /java/seedu/address/logic/parser/ExportCommandParser.java
 ``` java
 /**
  * Parser for the export command
@@ -306,6 +308,7 @@ public class ExportCommandParser implements Parser<ExportCommand> {
         String[] splitArgs = userInput.trim().split(regex, 2);
 
         String path;
+
         if (splitArgs.length > 0) {
             throw new ParseException(String.format(MESSAGE_INVALID_COMMAND_FORMAT, ExportCommand.MESSAGE_USAGE));
         } else {

@@ -484,7 +484,7 @@
         groupListView.getSelectionModel().selectedItemProperty()
                 .addListener((observable, oldValue, newValue) -> {
                     if (newValue != null) {
-                        logger.fine("Selection in person list panel changed to : '" + newValue + "'");
+                        logger.info("Selection in person list panel changed to : '" + newValue + "'");
                         raise(new GroupPanelSelectionChangedEvent(newValue));
                     }
                 });
